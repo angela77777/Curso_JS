@@ -29,5 +29,61 @@ function circlePerimeter(radio) {
 }
 
 function circleArea(radio) {
-    (radio * radio) * PI;
+    return (radio * radio) * PI;
+}
+
+// HTML
+
+function calculatePerimeterSquare() {
+    const input = document.getElementById("squareInput");
+    const value = input.value;
+
+    const perimeter = squarePerimeter(value);
+    alert(perimeter);
+}
+
+function calculateAreaSquare() {
+    const input = document.getElementById("squareInput");
+    const value = input.value;
+
+    const area = squareArea(value);
+    alert(area);
+}
+
+function calculatePerimeterTriangle() {
+    const input1 = document.getElementById("triangleInput1");
+    const value1 = parseInt(input1.value);
+    const input2 = document.getElementById("triangleInput2");
+    const value2 = parseInt(input2.value);
+    const input3 = document.getElementById("triangleInput3");
+    const value3 = parseInt(input3.value);
+
+    const perimeter = trianglePerimeter(value1, value2, value3);
+    alert(perimeter);
+}
+
+function calculateAreaTriangle() {
+    const input3 = document.getElementById("triangleInput3");
+    const value3 = input3.value;
+    const input4 = document.getElementById("triangleInput4");
+    const value4 = input4.value;
+
+    const area = triangleArea(value3, value4);
+    alert(area);
+} //circleInput
+
+function calculatePerimeterCircle() {
+    const input = document.getElementById("circleInput");
+    const value = input.value;
+
+    const perimeter = circlePerimeter(value);
+    alert(perimeter);
+}
+
+function calculateAreaCircle() {
+    const input = document.getElementById("circleInput");
+    const value = input.value;
+
+    const area = circleArea(value);
+    alert(area);
 }

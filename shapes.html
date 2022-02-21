@@ -18,12 +18,40 @@
             <p>Aquí podrás calcular magnitudes fundamentales geométricas de figuras en 2D: perímetro y área</p>
         </section>
         <section class="main-ops">
-            <div class="card square">
-                <form action="">
-                    <label for="squareInput">Escribe cuánto mide cada lado del cuadrado</label>
-                    <input id="squareInput" type="number">
-                    <button type="button">Obtener perímetro</button>            
-                    <button type="button">Obtener área</button> 
+            <div class="card">
+                <form>
+                    <span class="icon-ops square"></span>
+                    <label class="info-ops" for="squareInput">Escribe cuánto mide cada lado del cuadrado</label>
+                    <input id="squareInput" type="number" placeholder="Medida de cada lado">
+                    <label class="metric" for="squareInput">cm</label>
+                    <button type="button" onclick="calculatePerimeterSquare()">Obtener perímetro</button>            
+                    <button type="button" onclick="calculateAreaSquare()">Obtener área</button> 
+                </form>
+            </div>
+            <div class="card">
+                <form>
+                    <span class="icon-ops triangle"></span>
+                    <label class="info-ops" for="triangleInput1">Escribe cuánto miden los lados del triángulo</label>
+                    <input id="triangleInput1" type="number" placeholder="Medida del primer lado">
+                    <label class="metric" for="tringleInput1">cm</label>
+                    <input id="triangleInput2" type="number" placeholder="Medida del segundo lado">
+                    <label class="metric" for="tringleInput2">cm</label>
+                    <input id="triangleInput3" type="number" placeholder="Medida de la base">
+                    <label class="metric" for="tringleInput3">cm</label>
+                    <input id="triangleInput4" type="number" placeholder="Medida de la altura">
+                    <label class="metric" for="tringleInput4">cm</label>
+                    <button type="button" onclick="calculatePerimeterTriangle()">Obtener perímetro</button>            
+                    <button type="button" onclick="calculateAreaTriangle()">Obtener área</button> 
+                </form>
+            </div>
+            <div class="card">
+                <form>
+                    <span class="icon-ops circle"></span>
+                    <label class="info-ops" for="circleInput">Escribe cuánto mide el radio del círculo</label>
+                    <input id="circleInput" type="number" placeholder="Medida del radio">
+                    <label class="metric" for="circleInput">cm</label>
+                    <button type="button" onclick="calculatePerimeterCircle()">Obtener perímetro</button>            
+                    <button type="button" onclick="calculateAreaCircle()">Obtener área</button> 
                 </form>
             </div>
         </section>

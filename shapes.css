@@ -1,7 +1,7 @@
 :root {
   --primary-color: #5fc2b1;
   --secondary-color: #1f8c7d;
-  --tertiary-color: #005144;
+  --tertiary-color: #007163;
   --background-color: #f0fcf9;
   --just-white: #ffffff;
   --just-black: #000000;
@@ -61,13 +61,13 @@ main {
   width: 100%;
   min-width: 320px;
   height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card {
-  width: 60%;
-  min-width: 288px;
-  max-width: 400px;
-  min-height: 150px;
-  margin: 15px auto;
+  width: 38rem;
+  margin: 0 14px 28px;
   padding: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
@@ -76,8 +76,41 @@ main {
   background-color: var(--just-white);
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(28, 36, 34, 0.16);
+  align-items: center;
+  position: relative;
+}
+form .info-ops {
+  width: 90%;
+  margin-left: 30px;
+}
+.icon-ops {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.square {
+  background-image: url("./assets/square.png");
+}
+.triangle {
+  background-image: url("./assets/triangle.png");
+}
+.circle {
+  background-image: url("./assets/circle.png");
+}
+.metric {
+  width: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 form input {
+  width: 92%;
   padding-left: 0.5rem;
   border: 2px solid var(--primary-color);
   background-color: var(--just-white);
@@ -85,7 +118,6 @@ form input {
 }
 form button,
 form input {
-  width: 100%;
   height: 30px;
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
@@ -95,13 +127,14 @@ form input {
   line-height: 1.8rem;
 }
 form button {
+  width: 100%;
   border: 2px solid var(--secondary-color);
   background-color: var(--primary-color);
   color: var(--just-white);
 }
 form button:hover {
-  border: 2px solid var(--secondary-color);
-  background-color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  background-color: var(--secondary-color);
   font-weight: 500;
   cursor: pointer;
 }
