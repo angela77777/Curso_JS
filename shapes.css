@@ -1,6 +1,7 @@
 :root {
   --primary-color: #5fc2b1;
   --secondary-color: #1f8c7d;
+  --tertiary-color: #005144;
   --background-color: #f0fcf9;
   --just-white: #ffffff;
   --just-black: #000000;
@@ -62,7 +63,7 @@ main {
   height: auto;
 }
 .card {
-  width: 90%;
+  width: 60%;
   min-width: 288px;
   max-width: 400px;
   min-height: 150px;
@@ -78,12 +79,13 @@ main {
 }
 form input {
   padding-left: 0.5rem;
+  border: 2px solid var(--primary-color);
+  background-color: var(--just-white);
+  color: var(--just-black);
 }
 form button,
 form input {
-  border: 2px solid var(--primary-color);
-  background-color: var(--just-white);
-  width: 150px;
+  width: 100%;
   height: 30px;
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
@@ -91,10 +93,15 @@ form input {
   font-weight: 300;
   border-radius: 4px;
   line-height: 1.8rem;
-  color: var(--just-black);
+}
+form button {
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--just-white);
 }
 form button:hover {
   border: 2px solid var(--secondary-color);
-  background-color: var(--primary-color);
-  color: white;
+  background-color: var(--tertiary-color);
+  font-weight: 500;
+  cursor: pointer;
 }
