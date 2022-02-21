@@ -116,6 +116,10 @@ form input {
   background-color: var(--just-white);
   color: var(--just-black);
 }
+form input:focus {
+  outline: none;
+  border: 2px solid var(--tertiary-color);
+}
 form button,
 form input {
   height: 30px;
