@@ -29,7 +29,7 @@ function circlePerimeter(radio) {
 }
 
 function circleArea(radio) {
-    return (radio * radio) * PI;
+    return (radio ** 2) * PI;
 }
 
 // HTML
