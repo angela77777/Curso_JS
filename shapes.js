@@ -39,7 +39,7 @@ function calculatePerimeterSquare() {
     const value = input.value;
 
     const perimeter = squarePerimeter(value);
-    alert(perimeter);
+    alert(perimeter + " cm^2");
 }
 
 function calculateAreaSquare() {
@@ -47,7 +47,7 @@ function calculateAreaSquare() {
     const value = input.value;
 
     const area = squareArea(value);
-    alert(area);
+    alert(area + " cm^3");
 }
 
 function calculatePerimeterTriangle() {
@@ -59,7 +59,7 @@ function calculatePerimeterTriangle() {
     const value3 = parseInt(input3.value);
 
     const perimeter = trianglePerimeter(value1, value2, value3);
-    alert(perimeter);
+    alert(perimeter + " cm^2");
 }
 
 function calculateAreaTriangle() {
@@ -69,15 +69,15 @@ function calculateAreaTriangle() {
     const value4 = input4.value;
 
     const area = triangleArea(value3, value4);
-    alert(area);
-} //circleInput
+    alert(area + " cm^3");
+} 
 
 function calculatePerimeterCircle() {
     const input = document.getElementById("circleInput");
     const value = input.value;
 
     const perimeter = circlePerimeter(value);
-    alert(perimeter);
+    alert(perimeter + " cm^2");
 }
 
 function calculateAreaCircle() {
@@ -85,5 +85,5 @@ function calculateAreaCircle() {
     const value = input.value;
 
     const area = circleArea(value);
-    alert(area);
+    alert(area + " cm^3");
 }
