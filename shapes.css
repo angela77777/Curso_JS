@@ -42,8 +42,8 @@ main {
 .main-info {
   width: 100%;
   height: auto;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
   text-align: center;
 }
 .main-info h3 {
@@ -67,7 +67,7 @@ main {
 }
 .card {
   width: 38rem;
-  margin: 0 14px 28px;
+  margin: 0 1.4rem 2.8rem;
   padding: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
@@ -88,7 +88,7 @@ form .info-ops {
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 3.5rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
