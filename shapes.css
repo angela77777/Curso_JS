@@ -142,3 +142,28 @@ form button:hover {
   font-weight: 500;
   cursor: pointer;
 }
+
+/*Media queries*/
+
+@media only screen and (max-width: 670px) {
+  .header-title {
+    font-size: 2.8rem;
+  }
+  .main-info h3 {
+    font-size: 1.8rem;
+  }
+  .main-info p {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  .card {
+    font-size: 0.8rem;
+  }
+  .metric {
+    font-size: 0.8rem;
+  }
+  form button,
+  form input {
+    font-size: 0.8rem;
+  }
+}
