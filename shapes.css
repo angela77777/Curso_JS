@@ -66,8 +66,8 @@ main {
   flex-wrap: wrap;
 }
 .card {
-  width: 38rem;
-  margin: 0 1.4rem 2.8rem;
+  width: 45rem;
+  margin: 0 2rem 4rem;
   padding: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
@@ -82,6 +82,7 @@ main {
 form .info-ops {
   width: 90%;
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 .icon-ops {
   position: absolute;
@@ -94,13 +95,22 @@ form .info-ops {
   background-repeat: no-repeat;
 }
 .square {
-  background-image: url("./assets/square.png");
+  background-image: url("./assets/Shapes/square.png");
 }
 .triangle {
-  background-image: url("./assets/triangle.png");
+  background-image: url("./assets//Shapes/triangle.png");
 }
 .circle {
-  background-image: url("./assets/circle.png");
+  background-image: url("./assets/Shapes/circle.png");
+}
+.isoscelesTriangle {
+  background-image: url("./assets/Shapes/isoscelestriangle.png");
+}
+.equilateralTriangle {
+  background-image: url("./assets/Shapes/equilateraltriangle.png");
+}
+.rectangle {
+  background-image: url("./assets/Shapes/rectangle.png");
 }
 .metric {
   width: 10px;

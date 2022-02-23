@@ -20,18 +20,8 @@
         <section class="main-ops">
             <div class="card">
                 <form>
-                    <span class="icon-ops square"></span>
-                    <label class="info-ops" for="squareInput">Escribe cuánto mide cada lado del cuadrado</label>
-                    <input id="squareInput" type="number" placeholder="Medida de cada lado">
-                    <label class="metric" for="squareInput">cm</label>
-                    <button type="button" onclick="calculatePerimeterSquare()">Obtener perímetro</button>            
-                    <button type="button" onclick="calculateAreaSquare()">Obtener área</button> 
-                </form>
-            </div>
-            <div class="card">
-                <form>
                     <span class="icon-ops triangle"></span>
-                    <label class="info-ops" for="triangleInput1">Escribe cuánto miden los lados del triángulo</label>
+                    <label class="info-ops" for="triangleInput1">Escribe las medidas del triángulo</label>
                     <input id="triangleInput1" type="number" placeholder="Medida del primer lado">
                     <label class="metric" for="tringleInput1">cm</label>
                     <input id="triangleInput2" type="number" placeholder="Medida del segundo lado">
@@ -46,8 +36,54 @@
             </div>
             <div class="card">
                 <form>
+                    <span class="icon-ops isoscelesTriangle"></span>
+                    <label class="info-ops" for="isoscelesTriangleInput1">Escribe las medidas del triángulo isósceles</label>
+                    <input id="isoscelesTriangleInput1" type="number" placeholder="Medida del primer lado">
+                    <label class="metric" for="isoscelesTriangleInput1">cm</label>
+                    <input id="isoscelesTriangleInput2" type="number" placeholder="Medida del segundo lado">
+                    <label class="metric" for="isoscelesTriangleInput2">cm</label>
+                    <input id="isoscelesTriangleInput3" type="number" placeholder="Medida de la base">
+                    <label class="metric" for="isoscelesTriangleInput3">cm</label>
+                    <button type="button" onclick="calculatePerimeterIsoscelesTriangle()">Obtener perímetro</button>            
+                    <button type="button" onclick="calculateAreaIsoscelesTriangle()">Obtener área</button> 
+                </form>
+            </div>
+            <div class="card">
+                <form>
+                    <span class="icon-ops equilateralTriangle"></span>
+                    <label class="info-ops" for="equilateralTriangleInput">Escribe la medida de cada lado del triángulo equilátero</label>
+                    <input id="equilateralTriangleInput" type="number" placeholder="Medida de cada lado">
+                    <label class="metric" for="equilateralTriangleInput">cm</label>
+                    <button type="button" onclick="calculatePerimeterEquilateralTriangle()">Obtener perímetro</button>            
+                    <button type="button" onclick="calculateAreaEquilateralTriangle()">Obtener área</button> 
+                </form>
+            </div>
+            <div class="card">
+                <form>
+                    <span class="icon-ops square"></span>
+                    <label class="info-ops" for="squareInput">Escribe la medida de cada lado del cuadrado</label>
+                    <input id="squareInput" type="number" placeholder="Medida de cada lado">
+                    <label class="metric" for="squareInput">cm</label>
+                    <button type="button" onclick="calculatePerimeterSquare()">Obtener perímetro</button>            
+                    <button type="button" onclick="calculateAreaSquare()">Obtener área</button> 
+                </form>
+            </div>
+            <div class="card">
+                <form>
+                    <span class="icon-ops rectangle"></span>
+                    <label class="info-ops" for="rectangleInput1">Escribe las medidas del rectángulo</label>
+                    <input id="rectangleInput1" type="number" placeholder="Medidas de los lados verticales">
+                    <label class="metric" for="rectangleInput1">cm</label>
+                    <input id="rectangleInput2" type="number" placeholder="Medida de los lados horizontales">
+                    <label class="metric" for="rectangleInput2">cm</label>
+                    <button type="button" onclick="calculatePerimeterRectangle()">Obtener perímetro</button>            
+                    <button type="button" onclick="calculateAreaRectangle()">Obtener área</button> 
+                </form>
+            </div>
+            <div class="card">
+                <form>
                     <span class="icon-ops circle"></span>
-                    <label class="info-ops" for="circleInput">Escribe cuánto mide el radio del círculo</label>
+                    <label class="info-ops" for="circleInput">Escribe la medida del radio del círculo</label>
                     <input id="circleInput" type="number" placeholder="Medida del radio">
                     <label class="metric" for="circleInput">cm</label>
                     <button type="button" onclick="calculatePerimeterCircle()">Obtener perímetro</button>            

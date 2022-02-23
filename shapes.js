@@ -16,6 +16,48 @@ function triangleArea(base, height) {
     return (base * height) / 2;
 }
 
+// Isosceles triangle code
+function isoscelesTriangleHeight(side1, side2, base) {
+    if(side1 === side2 && side1 != base){
+        console.log("triángulo isosceles");
+        const height = Math.sqrt((side1 ** 2) - ((base ** 2) / 4));
+        return height;
+    }
+
+    else{
+        alert("El lado 1 y el lado 2 no son iguales, no corresponde a un triángulo isósceles, digite nuevamente")
+    }
+}
+
+function isoscelesTriangleArea(side1, side2, base) {
+    const height = isoscelesTriangleHeight(side1, side2, base);
+    return (base * height) / 2;
+}
+
+// Equilateral triangle code
+function equilateralTrianglePerimeter(side) {
+    return side * 3;
+}
+
+function equilateralTriangleHeight(side) {
+    const height = (Math.sqrt(3 * side)) / 2;
+    return height;
+}
+
+function equilateralTriangleArea(side) {
+    const height = equilateralTriangleHeight(side);
+    return (side * height) / 2;
+}
+
+// Rectangle code
+function rectanglePerimeter(side1, side2) {
+    return (side1 * 2) + (side2 * 2);
+}
+
+function rectangleArea(side1, side2) {
+    return side1 * side2;
+}
+
 // Circle code
 const PI = Math.PI;
 
@@ -33,22 +75,6 @@ function circleArea(radio) {
 }
 
 // HTML
-
-function calculatePerimeterSquare() {
-    const input = document.getElementById("squareInput");
-    const value = input.value;
-
-    const perimeter = squarePerimeter(value);
-    alert(perimeter + " cm^2");
-}
-
-function calculateAreaSquare() {
-    const input = document.getElementById("squareInput");
-    const value = input.value;
-
-    const area = squareArea(value);
-    alert(area + " cm^3");
-}
 
 function calculatePerimeterTriangle() {
     const input1 = document.getElementById("triangleInput1");
@@ -71,6 +97,82 @@ function calculateAreaTriangle() {
     const area = triangleArea(value3, value4);
     alert(area + " cm^3");
 } 
+
+function calculatePerimeterIsoscelesTriangle() {
+    const input1 = document.getElementById("isoscelesTriangleInput1");
+    const value1 = parseInt(input1.value);
+    const input2 = document.getElementById("isoscelesTriangleInput2");
+    const value2 = parseInt(input2.value);
+    const input3 = document.getElementById("isoscelesTriangleInput3");
+    const value3 = parseInt(input3.value);
+
+    const perimeter = trianglePerimeter(value1, value2, value3);
+    alert(perimeter + " cm^2");
+}
+
+function calculateAreaIsoscelesTriangle() {
+    const input1 = document.getElementById("isoscelesTriangleInput1");
+    const value1 = parseInt(input1.value);
+    const input2 = document.getElementById("isoscelesTriangleInput2");
+    const value2 = parseInt(input2.value);
+    const input3 = document.getElementById("isoscelesTriangleInput3");
+    const value3 = input3.value;
+
+    const area = isoscelesTriangleArea(value1, value2, value3)
+    alert(area + " cm^3");
+}
+
+function calculatePerimeterEquilateralTriangle() {
+    const input = document.getElementById("equilateralTriangleInput");
+    const value = input.value;
+
+    const perimeter = equilateralTrianglePerimeter(value);
+    alert(perimeter + " cm^2");
+}
+
+function calculateAreaEquilateralTriangle() {
+    const input = document.getElementById("equilateralTriangleInput");
+    const value = input.value;
+
+    const area = equilateralTriangleArea(value);
+    alert(area + " cm^3");
+}
+
+function calculatePerimeterSquare() {
+    const input = document.getElementById("squareInput");
+    const value = input.value;
+
+    const perimeter = squarePerimeter(value);
+    alert(perimeter + " cm^2");
+}
+
+function calculateAreaSquare() {
+    const input = document.getElementById("squareInput");
+    const value = input.value;
+
+    const area = squareArea(value);
+    alert(area + " cm^3");
+}
+
+function calculatePerimeterRectangle() {
+    const input1 = document.getElementById("rectangleInput1");
+    const value1 = input1.value;
+    const input2 = document.getElementById("rectangleInput2");
+    const value2 = input2.value;
+
+    const perimeter = rectanglePerimeter(value1, value2);
+    alert(perimeter + " cm^2");
+}
+
+function calculateAreaRectangle() {
+    const input1 = document.getElementById("rectangleInput1");
+    const value1 = input1.value;
+    const input2 = document.getElementById("rectangleInput2");
+    const value2 = input2.value;
+
+    const area = rectangleArea(value1, value2);
+    alert(area + " cm^3");
+}
 
 function calculatePerimeterCircle() {
     const input = document.getElementById("circleInput");
