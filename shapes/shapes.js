@@ -17,10 +17,14 @@ function triangleArea(base, height) {
 }
 
 // Isosceles triangle code
-function isoscelesTriangleHeight(side1, side2, base) {
-    if(side1 === side2 && side1 != base){
+function isoscelesTrianglePerimeter(sides, base) {
+    return (sides * 2) + base;
+}
+
+function isoscelesTriangleHeight(sides, base) {
+    if(sides != base){
         console.log("triángulo isosceles");
-        const height = Math.sqrt((side1 ** 2) - ((base ** 2) / 4));
+        const height = Math.sqrt((sides ** 2) - ((base ** 2) / 4));
         return height;
     }
 
@@ -29,8 +33,8 @@ function isoscelesTriangleHeight(side1, side2, base) {
     }
 }
 
-function isoscelesTriangleArea(side1, side2, base) {
-    const height = isoscelesTriangleHeight(side1, side2, base);
+function isoscelesTriangleArea(side, base) {
+    const height = isoscelesTriangleHeight(side, base);
     return (base * height) / 2;
 }
 
@@ -89,12 +93,12 @@ function calculatePerimeterTriangle() {
 }
 
 function calculateAreaTriangle() {
-    const input3 = document.getElementById("triangleInput3");
-    const value3 = input3.value;
-    const input4 = document.getElementById("triangleInput4");
-    const value4 = input4.value;
+    const input1 = document.getElementById("triangleInput1");
+    const value1 = input1.value;
+    const input2 = document.getElementById("triangleInput2");
+    const value2 = input2.value;
 
-    const area = triangleArea(value3, value4);
+    const area = triangleArea(value1, value2);
     alert(area + " cm^3");
 } 
 
@@ -103,10 +107,8 @@ function calculatePerimeterIsoscelesTriangle() {
     const value1 = parseInt(input1.value);
     const input2 = document.getElementById("isoscelesTriangleInput2");
     const value2 = parseInt(input2.value);
-    const input3 = document.getElementById("isoscelesTriangleInput3");
-    const value3 = parseInt(input3.value);
 
-    const perimeter = trianglePerimeter(value1, value2, value3);
+    const perimeter = isoscelesTrianglePerimeter(value1, value2);
     alert(perimeter + " cm^2");
 }
 
@@ -115,10 +117,8 @@ function calculateAreaIsoscelesTriangle() {
     const value1 = parseInt(input1.value);
     const input2 = document.getElementById("isoscelesTriangleInput2");
     const value2 = parseInt(input2.value);
-    const input3 = document.getElementById("isoscelesTriangleInput3");
-    const value3 = input3.value;
 
-    const area = isoscelesTriangleArea(value1, value2, value3)
+    const area = isoscelesTriangleArea(value1, value2)
     alert(area + " cm^3");
 }
 

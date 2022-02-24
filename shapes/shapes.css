@@ -95,22 +95,22 @@ form .info-ops {
   background-repeat: no-repeat;
 }
 .square {
-  background-image: url("./assets/Shapes/square.png");
+  background-image: url("../assets/Shapes/square.png");
 }
 .triangle {
-  background-image: url("./assets//Shapes/triangle.png");
+  background-image: url("../assets//Shapes/triangle.png");
 }
 .circle {
-  background-image: url("./assets/Shapes/circle.png");
+  background-image: url("../assets/Shapes/circle.png");
 }
 .isoscelesTriangle {
-  background-image: url("./assets/Shapes/isoscelestriangle.png");
+  background-image: url("../assets/Shapes/isoscelestriangle.png");
 }
 .equilateralTriangle {
-  background-image: url("./assets/Shapes/equilateraltriangle.png");
+  background-image: url("../assets/Shapes/equilateraltriangle.png");
 }
 .rectangle {
-  background-image: url("./assets/Shapes/rectangle.png");
+  background-image: url("../assets/Shapes/rectangle.png");
 }
 .metric {
   width: 10px;
