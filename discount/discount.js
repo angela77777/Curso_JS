@@ -9,7 +9,6 @@ function calculateDiscountedPrice(price, discount) {
 }
 
 
-
 /*console.log({
     originalPrice,
     discount,
