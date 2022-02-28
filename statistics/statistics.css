@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #9884e1;
+  --secondary-color: #56489e;
+  --tertiary-color: #362d7e;
+  --background-color: #ffe9ff;
+  --just-white: #ffffff;
+  --just-black: #000000;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--background-color);
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 60px;
+  text-align: center;
+  background-color: var(--primary-color);
+  box-shadow: 2px 2px 5px #14005a9d;
+}
+.header-title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: var(--just-white);
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+.main-info {
+  width: 100%;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+}
+.main-info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+.main-info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.main-ops {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  width: 55rem;
+  margin: 0 2rem 4rem;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--just-white);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(28, 36, 34, 0.16);
+  align-items: center;
+  position: relative;
+}
+form .info-ops {
+  width: 100%;
+}
+form input {
+  width: 100%;
+  padding-left: 0.5rem;
+  border: 2px solid var(--primary-color);
+  background-color: var(--just-white);
+  color: var(--just-black);
+}
+form input:focus {
+  outline: none;
+  border: 2px solid var(--tertiary-color);
+}
+form button,
+form input,
+p {
+  height: 30px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  border-radius: 4px;
+  line-height: 1.8rem;
+}
+form button {
+  width: 100%;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--just-white);
+}
+form button:hover {
+  border: 2px solid var(--tertiary-color);
+  background-color: var(--secondary-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+form .line {
+  border: 1px solid var(--tertiary-color);
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 670px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+  .main-info h3 {
+    font-size: 1.8rem;
+  }
+  .main-info p {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  .card {
+    font-size: 0.8rem;
+  }
+  form button,
+  form input {
+    font-size: 0.8rem;
+  }
+}
