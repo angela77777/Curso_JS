@@ -1,4 +1,4 @@
-# Curso_JS
+# CURSO DE JAVASCRIPT
 
 ...
 

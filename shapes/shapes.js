@@ -24,7 +24,7 @@ function isoscelesTrianglePerimeter(sides, base) {
 function isoscelesTriangleHeight(sides, base) {
     if(sides != base){
         console.log("triángulo isosceles");
-        const height = Math.sqrt((sides ** 2) - ((base ** 2) / 4));
+        const height = Math.sqrt(((sides * sides) - (base * base)) / 4);
         return height;
     }
 
@@ -44,7 +44,7 @@ function equilateralTrianglePerimeter(side) {
 }
 
 function equilateralTriangleHeight(side) {
-    const height = (Math.sqrt(3 * side)) / 2;
+    const height = Math.sqrt((3 * side)) / 2;
     return height;
 }
 
@@ -75,7 +75,7 @@ function circlePerimeter(radio) {
 }
 
 function circleArea(radio) {
-    return (radio ** 2) * PI;
+    return (radio * radio) * PI;
 }
 
 // HTML
@@ -87,19 +87,23 @@ function calculatePerimeterTriangle() {
     const value2 = parseInt(input2.value);
     const input3 = document.getElementById("triangleInput3");
     const value3 = parseInt(input3.value);
+    const result = document.getElementById("resultTriangle");
 
     const perimeter = trianglePerimeter(value1, value2, value3);
-    alert(perimeter + " cm^2");
+    
+    result.innerText = "El perímetro es igual a " + perimeter + " cm^2";
 }
 
 function calculateAreaTriangle() {
-    const input1 = document.getElementById("triangleInput1");
-    const value1 = input1.value;
-    const input2 = document.getElementById("triangleInput2");
-    const value2 = input2.value;
+    const input3 = document.getElementById("triangleInput3");
+    const value3 = input3.value;
+    const input4 = document.getElementById("triangleInput4");
+    const value4 = input4.value;
+    const result = document.getElementById("resultTriangle");
 
-    const area = triangleArea(value1, value2);
-    alert(area + " cm^3");
+    const area = triangleArea(value3, value4);
+    
+    result.innerText = "El área es igual a " + area + " cm^3";
 } 
 
 function calculatePerimeterIsoscelesTriangle() {
@@ -107,9 +111,11 @@ function calculatePerimeterIsoscelesTriangle() {
     const value1 = parseInt(input1.value);
     const input2 = document.getElementById("isoscelesTriangleInput2");
     const value2 = parseInt(input2.value);
+    const result = document.getElementById("resultIsoscelesTriangle");
 
     const perimeter = isoscelesTrianglePerimeter(value1, value2);
-    alert(perimeter + " cm^2");
+
+    result.innerText = "El perímetro es igual a " + perimeter + " cm^2";
 }
 
 function calculateAreaIsoscelesTriangle() {
@@ -117,51 +123,63 @@ function calculateAreaIsoscelesTriangle() {
     const value1 = parseInt(input1.value);
     const input2 = document.getElementById("isoscelesTriangleInput2");
     const value2 = parseInt(input2.value);
+    const result = document.getElementById("resultIsoscelesTriangle");
 
     const area = isoscelesTriangleArea(value1, value2)
-    alert(area + " cm^3");
+    
+    result.innerText = "El área es igual a " + area + " cm^3";
 }
 
 function calculatePerimeterEquilateralTriangle() {
     const input = document.getElementById("equilateralTriangleInput");
     const value = input.value;
+    const result = document.getElementById("resultEquiateralTriangle");
 
     const perimeter = equilateralTrianglePerimeter(value);
-    alert(perimeter + " cm^2");
+    
+    result.innerText = "El perímetro es igual a " + perimeter + " cm^2";
 }
 
 function calculateAreaEquilateralTriangle() {
     const input = document.getElementById("equilateralTriangleInput");
     const value = input.value;
+    const result = document.getElementById("resultEquiateralTriangle");
 
     const area = equilateralTriangleArea(value);
-    alert(area + " cm^3");
+    
+    result.innerText = "El área es igual a " + area + " cm^3";
 }
 
 function calculatePerimeterSquare() {
     const input = document.getElementById("squareInput");
-    const value = input.value;
+    const value = input.value; 
+    const result = document.getElementById("resultSquare");
 
     const perimeter = squarePerimeter(value);
-    alert(perimeter + " cm^2");
+    
+    result.innerText = "El perímetro es igual a " + perimeter + " cm^2";
 }
 
 function calculateAreaSquare() {
     const input = document.getElementById("squareInput");
     const value = input.value;
+    const result = document.getElementById("resultSquare");
 
     const area = squareArea(value);
-    alert(area + " cm^3");
+    
+    result.innerText = "El área es igual a " + area + " cm^3";
 }
 
 function calculatePerimeterRectangle() {
     const input1 = document.getElementById("rectangleInput1");
     const value1 = input1.value;
     const input2 = document.getElementById("rectangleInput2");
-    const value2 = input2.value;
+    const value2 = input2.value; 
+    const result = document.getElementById("resultRectangle");
 
     const perimeter = rectanglePerimeter(value1, value2);
-    alert(perimeter + " cm^2");
+    
+    result.innerText = "El perímetro es igual a " + perimeter + " cm^2";
 }
 
 function calculateAreaRectangle() {
@@ -169,23 +187,29 @@ function calculateAreaRectangle() {
     const value1 = input1.value;
     const input2 = document.getElementById("rectangleInput2");
     const value2 = input2.value;
+    const result = document.getElementById("resultRectangle");
 
     const area = rectangleArea(value1, value2);
-    alert(area + " cm^3");
+    
+    result.innerText = "El área es igual a " + area + " cm^3";
 }
 
 function calculatePerimeterCircle() {
     const input = document.getElementById("circleInput");
     const value = input.value;
+    const result = document.getElementById("resultCircle");
 
     const perimeter = circlePerimeter(value);
-    alert(perimeter + " cm^2");
+    
+    result.innerText = "El perímetro es igual a " + perimeter + " cm^2";
 }
 
 function calculateAreaCircle() {
     const input = document.getElementById("circleInput");
     const value = input.value;
+    const result = document.getElementById("resultCircle");
 
     const area = circleArea(value);
-    alert(area + " cm^3");
+    
+    result.innerText = "El área es igual a " + area + " cm^3";
 }

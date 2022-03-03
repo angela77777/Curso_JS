@@ -131,7 +131,8 @@ form input:focus {
   border: 2px solid var(--tertiary-color);
 }
 form button,
-form input {
+form input,
+p {
   height: 30px;
   margin-top: 20px;
   font-family: "Montserrat", sans-serif;
@@ -151,6 +152,9 @@ form button:hover {
   background-color: var(--secondary-color);
   font-weight: 500;
   cursor: pointer;
+}
+form .line {
+  border: 1px solid var(--tertiary-color);
 }
 
 /*Media queries*/
@@ -173,7 +177,8 @@ form button:hover {
     font-size: 0.8rem;
   }
   form button,
-  form input {
+  form input,
+  p {
     font-size: 0.8rem;
   }
 }

@@ -66,5 +66,5 @@ function calculateMode(list) {
     
     const mode = arrayList[arrayList.length - 1];
 
-    return mode;
+    return "La moda es " + mode[0] + " y se repite " + mode[1] + " veces";
 }
